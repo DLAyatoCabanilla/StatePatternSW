@@ -13,7 +13,7 @@ public class ActiveState implements AccountState {
 
     @Override
     public void suspend(Account account) {
-        account.setAccountState(new SuspendedState());
+        account.setAccountState(new SuspendState());
         System.out.println("Account is suspended due to inactivity and insufficient balance for requirements.");
     }
 
